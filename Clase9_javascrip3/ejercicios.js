@@ -22,11 +22,3 @@
 // }
 
 // alert("Bienvenido a Muy Muy lejano")
-
-// Piedra, Papel O Tijera.
-// En este ejercicio deberás escribir un código que:
-// Le pida al usuario que ingrese uno de estos valores: "Piedra", "Papel" o "Tijera".
-// Elija un valor al azar usando Math.random ().
-// Le diga al usuario quién ganó.
-
-// Le pregunte al usuario si le gustaría volver a jugar.
