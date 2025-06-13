@@ -1,0 +1,40 @@
+.tituloprincipal {
+    color: rgb(0, 255, 89);
+}
+
+label {
+    color: blue;
+}
+
+#titulofinal {
+    color: blueviolet;
+}
+
+.familia {
+    font-family: cursive;
+}
+
+.rojo {
+    color: hsl(120, 100%, 50%);
+}
+
+.azul {
+    color: blue;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+div {
+    width: 400px;
+    background-color: blue;
+}

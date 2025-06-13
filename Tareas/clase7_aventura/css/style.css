@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/paris.png');
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.escena {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.escena img {
+    width: 450px;
+    border-radius: 12px;
+}
+
+.escena h2 {
+    font-family: "Cinzel", serif;
+    color: #F0E6D2;
+}
+
+.descripcion-escena {
+    background-color: #3B3245;
+    color: #F0E6D2;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 20px auto;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.73);
+}
+
+.descripcion-escena p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.opciones ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.boton {
+    font-family: "Cinzel", serif;
+    color: #D4AF37;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    padding: 5px;
+}
+
+.boton:hover {
+    box-shadow: 0px 2px 5px #D4AF37;
+    
+}

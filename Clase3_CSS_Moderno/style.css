@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center; /*distribucion horizonatal, solo con ROW*/
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: darkgray;
+    padding: 20px;
+}
+
+.container2 {
+    display: flex;
+    align-items: flex-start; /*distribucion horizonatal, solo con COLUMN*/
+    flex-direction: column;
+    gap: 10px; /*separa las columnas (se puede usar con row y column)*/
+}
+
+.item1 {
+    background-color: rgb(156, 122, 190);
+    padding: 20px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 30%; /*cuantas columas y el ancho de cada una*/
+    grid-template-rows: 100px 50px;
+    gap: 5px;
+}
+
+.box {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+}

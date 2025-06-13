@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.imperio {
+    background-color: rgb(155, 45, 45);
+}
+
+.rebeldes {
+    background-color: rgb(40, 40, 199);
+}
+
+#darth-vader {
+    font-size: 200%;
+    font-style: italic;
+}
+
+#luke {
+    font-style: italic;
+    font-size: 200%;
+}
+
+.soldados h3{
+    letter-spacing: 5px;
+}
+
+.soldados img {
+    border: 3px black dashed;
+}
+
+.apoyo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nave {
+    text-transform: uppercase;
+}
+
+.droides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
