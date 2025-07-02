@@ -74,5 +74,34 @@
 //SINTAXIS BASICA
 //elemento.addEventListener("tipoDeEvento", functionHandler)
 
-const boton = document.querySelector("#saludar");
-boton.addEventListener("click", () => {alert("Hola soy un evento")});
+// const boton = document.querySelector("#saludar");
+
+// function saludar() {
+//     alert("Hola soy un evento")
+// }
+
+// boton.addEventListener("click", saludar);
+
+//tarea de clase ------------
+
+// const magia = document.querySelector("#magia")
+// const imagen = document.querySelector("#imagen")
+
+// imagen.addEventListener("mouseover", () => {
+//     imagen.style.display = "none";
+// });
+
+// imagen.addEventListener("mouseout", () => {
+//     imagen.style.display = "block";
+// });
+
+//Juego de carreras
+//usaras 2 imagenes que representen 2 autos de carreras distintos
+
+const auto1 = document.querySelector("#auto1")
+const auto2 = document.querySelector("#auto2")
+
+let post1 = 0
+let post2 = 0
+
+const pista = document.querySelector("#pista")

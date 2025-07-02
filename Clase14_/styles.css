@@ -1,0 +1,27 @@
+#pista {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-color: rgb(105, 105, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .pista-lineas{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 10px;
+    height: 100%;
+    background-image: repeating-linear-gradient(  
+        to bottom, white 0, white 20px,
+        transparent 20px, transparent 40px
+    );
+    transform: translateX(-50%);
+} */
+
+.auto {
+    width: 150px;
+    height: 150px;
+}
