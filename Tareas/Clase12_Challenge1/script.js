@@ -54,17 +54,22 @@
 
 // console.log(filtradoFrutas(frutasYVerduras))
 
-//CUATRO ------------------------ SIN TERMINAR
+//CUATRO
 
 // let unidades = [1, 2, 3, 4];
 // let gaseosas = ["cocacola", "sprite", "fanta", "seven up"];
 
-// function dispenseGaseosas(gaseosas, cantidad) {
-//     let despensa = []
-
+// function dispenserGaseosas(gaseosas, unidades) {
+//     let despensa = {};
+//     for (let i = 0; i < gaseosas.length; i++) {
+//         despensa[gaseosas[i]] = unidades[i];
+//     }
+//     return despensa;
 // }
 
-// dispenseGaseosas(gaseosas, unidades)
+// let miStock = dispenserGaseosas(gaseosas, unidades);
+
+// console.log("Cantidad de sprite:", miStock["sebas"]);
 
 //CINCO ---------------------------
 
