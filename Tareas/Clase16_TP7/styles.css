@@ -1,0 +1,9 @@
+body {
+    background-image: url('cocina.jpeg');
+    height: 100vh;
+    overflow: hidden;
+}
+
+.raton {
+    position: fixed;
+}
