@@ -31,12 +31,12 @@ console.log(obj)
 
 //importar funciones y variables
 
-import { suma, PI } from "./otro.js";
+// import { suma, PI } from "./otro.js";
 
-console.log(suma(1,5))
+// console.log(suma(1,5))
 
-console.log(PI)
+// console.log(PI)
 
-import data from "./data.json"
+// import data from "./data.json"
 
-console.log(data)
+// console.log(data)
