@@ -31,7 +31,7 @@ function biggestOne(num1, num2, palabra) {
     }
 }
 
-
+//Afusbdg
 console.log(biggestOne(8    ,3,"jota"))
 
 //TRES--------------------------
