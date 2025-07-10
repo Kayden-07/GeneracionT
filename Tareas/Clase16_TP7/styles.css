@@ -6,4 +6,7 @@ body {
 
 .raton {
     position: fixed;
+    pointer-events: none;
+    margin-top: -200px;
+    margin-left: -200px;
 }
