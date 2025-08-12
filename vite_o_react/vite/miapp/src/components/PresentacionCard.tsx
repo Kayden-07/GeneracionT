@@ -11,6 +11,10 @@ function PresentacionCard({nombre, apellido, onSaludar }: Props) {
             <p>Nombre: {nombre}</p>
             <p>Apellido: {apellido}</p>
             <button onClick={()=> onSaludar(nombre, apellido)}>Saludar</button>
+
+            <div style={{marginTop: '1rem'}}>
+                <canvas></canvas>
+            </div>
         </>
     )
 }
