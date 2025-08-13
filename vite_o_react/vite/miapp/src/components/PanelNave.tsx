@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function PanelNave() {
 
     const [energia, setEnergia] = useState(100);
-    const [mensage, setMensaje] = useState('');
-    const [comentario, setComentario] = useState('');
+    const [mensaje, setMensaje] = useState('');
+    const [comentarios, setComentarios] = useState<string[]>([]);
+
+    useEffect(()=> {
+        console.log("Componente montado")
+    }, [mensaje])
 
     const gastarEnergia = () => {
         if (energia > 0) {
@@ -20,8 +24,8 @@ function PanelNave() {
 
     const manejarComentario = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        if (mensage.length < 40) {
-            setComentario(mensage);
+        if (mensaje.length < 40) {
+            setComentarios([...comentarios, mensaje]);
             setMensaje('');
         }
     }
@@ -34,17 +38,20 @@ function PanelNave() {
                 <button onClick={gastarEnergia}>Usar Nave</button>
                 <button onClick={recargarEnergia}>Recargar Energia</button>
 
-                <h3>Comentario</h3>
+                <h3>💬 Comentario</h3>
                 <form onSubmit={manejarComentario}>
                     <input
                         type="text"
-                        value={mensage}
+                        value={mensaje}
                         onChange={(e) => setMensaje(e.target.value)}
                         placeholder="Escribe tu cometario (menos de 40 caracteres)"
                     />
-                    <button type="submit" style={{marginLeft: '10px'}}>Comentar</button>
+                    <button type="submit" style={{ marginLeft: '10px' }}>Comentar</button>
                 </form>
-                <p>{comentario}</p>
+
+                {comentarios.map((comentario, index) => (
+                    <p key={index}>Comentario {index + 1}: {comentario}</p>
+                ))}
             </div>
         </>
     )

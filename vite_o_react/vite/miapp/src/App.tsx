@@ -1,11 +1,11 @@
 import './App.css'
-import PanelNave from './components/PanelNave'
+import LlamaApi from './components/LlamaApi'
 
 function App() {
 
   return (
     <>
-      <PanelNave/>
+    <LlamaApi/>
     </>
   )
 }
