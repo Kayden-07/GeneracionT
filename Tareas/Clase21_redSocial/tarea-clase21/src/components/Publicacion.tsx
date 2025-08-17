@@ -39,7 +39,7 @@ function Publicacion() {
                     <button onClick={() => setMeDivierte(meDivierte + 1)}>😂 Me divierte ({meDivierte})</button>
                     <button onClick={() => setMeSorprende(meSorprende + 1)}>😮 Me sorprende ({meSorprende})</button>
                 </div>
-                <h3>💬 Comentario</h3>
+                <h3>💬 Comentarios</h3>
                 <form onSubmit={manejarComentario}>
                     <input
                         type="text"
