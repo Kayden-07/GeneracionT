@@ -1,16 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import CharacterList from './components/CharacterList';
+import { useState } from "react";
+import CharacterList from "./components/CharacterList";
+import CharacterDetail from "./components/CharacterDetail";
 
 function App() {
+  const [selectedCharacter, setSelectedCharacter] = useState(null);
 
   return (
     <>
-      <CharacterList/>
+      <div style={{ padding: "2rem" }}>
+        {!selectedCharacter ? (
+          <CharacterList onSelectCharacter={setSelectedCharacter} />
+        ) : (
+          <CharacterDetail
+            character={selectedCharacter}
+            onBack={() => setSelectedCharacter(null)}
+          />
+        )}
+      </div>
     </>
-  )
+
+  );
 }
 
-export default App
+export default App;

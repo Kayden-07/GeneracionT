@@ -1,8 +1,8 @@
 import { fetchRickMortyCharacters } from '../services/RickMortyServices';
 import React, { useEffect, useState } from 'react';
-import { Grid, Card } from '@mui/material';
+import { Grid, Card, CardMedia, CardContent, CardActionArea, Typography } from '@mui/material';
 
-function CharacterList() {
+function CharacterList({ onSelectCharacter }) {
     const [characters, setCharacters] = useState([]);
 
     useEffect(() => {
@@ -13,15 +13,21 @@ function CharacterList() {
 
     return (
         <>
-            <h1>Rick and Morty Personajes</h1>
-            <Grid container spacing={2}>
-                {characters.map(character => ( 
-                    <Grid item xs={12} sm={6} md={4} lg={3} key={character.id}>
-                        <Card variant="outlined">
-                            <img src={character.image} alt={character.name} />
-                            <h2>{character.name}</h2>
-                        </Card>
-                    </Grid> 
+            <Typography variant="h6" component="h1" align="center">
+                <h1>Rick and Morty Personajes</h1>
+            </Typography>
+            <Grid container spacing={5} justifyContent="center">
+                {characters.map(character => (
+                    <Card variant="outlined">
+                        <CardActionArea onClick={() => onSelectCharacter(character)}>
+                            <CardMedia component="img" image={character.image} alt={character.name} />
+                            <CardContent>
+                                <Typography variant="h6" component="div">
+                                    {character.name}
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
                 ))}
             </Grid>
         </>
