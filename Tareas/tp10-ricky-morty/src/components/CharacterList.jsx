@@ -8,14 +8,14 @@ function CharacterList({ onSelectCharacter }) {
     const [hasMore, setHasMore] = useState(true);
 
     useEffect(() => {
-        loadCharacters(page); // Cargar personajes al montar el componente o cambiar de página
+        loadCharacters(page); 
     }, [page]); 
 
     const loadCharacters = async (page) => { // Función para cargar personajes
         try {
             const data = await fetchRickMortyCharacters(page);
             setCharacters((prev) => [...prev, ...data.results]); // Agregar nuevos personajes a la lista existente
-            setHasMore(data.info.next !== null);
+            setHasMore(data.info.next !== null); 
         } catch (error) {
             console.error(error);
         }

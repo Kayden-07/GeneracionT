@@ -1,4 +1,3 @@
-// api.js
 export async function fetchRickMortyCharacters(page = 1) {
   const response = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
   if (!response.ok) {
