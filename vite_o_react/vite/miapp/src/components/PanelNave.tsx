@@ -49,6 +49,12 @@ function PanelNave() {
                     <button type="submit" style={{ marginLeft: '10px' }}>Comentar</button>
                 </form>
 
+                {energia > 0 ? (
+                    <p>La nave tiene energia</p>
+                ) : (
+                    <p>La nave se queso sin energia</p>
+                )}
+
                 {comentarios.map((comentario, index) => (
                     <p key={index}>Comentario {index + 1}: {comentario}</p>
                 ))}

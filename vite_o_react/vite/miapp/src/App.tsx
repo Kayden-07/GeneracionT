@@ -1,11 +1,11 @@
 import './App.css'
-import LlamaApi from './components/LlamaApi'
+import TodoApp from './components/TodoApp'
 
 function App() {
 
   return (
     <>
-    <LlamaApi/>
+    <TodoApp />
     </>
   )
 }
